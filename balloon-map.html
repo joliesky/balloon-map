@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
 	<![endif]-->
 	<style type="text/css">
-		#map { height: 600px; width:800px;}
+		#map { height: 1000px; width:800px;}
 	</style>
 	<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
 	<script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
@@ -15,10 +15,327 @@
 <body>
 	<div id="map"></div>
 	<script type="text/javascript">
-		var map = L.map('map').setView([35.196, -106.597], 16);
+		var map = L.map('map').setView([35.197, -106.596], 16);
 		var googleLayer = new L.Google('HYBRID');
 		map.addLayer(googleLayer);
-		var marker = L.marker([35.196, -106.597]).addTo(map);
+		//Balloon field polygon
+		var field = L.polygon([
+			[35.199409, -106.594065],
+			[35.198024, -106.59458],
+			[35.197989, -106.594259],
+			[35.193903, -106.59604],
+			[35.193921, -106.596383],
+			[35.19371, -106.596533],
+			[35.193816, -106.596941],
+			[35.192816, -106.597391],
+			[35.192465, -106.597456],
+			[35.192465, -106.597456],
+			[35.19229, -106.598378],
+			[35.192518, -106.599473],
+			[35.193132, -106.600159],
+			[35.194009, -106.600631],
+			[35.199549, -106.598078],
+			[35.199865, -106.597005],
+			[35.1999, -106.595889],
+			[35.199795, -106.594881]
+		], {
+			color: 'green',
+			fillOpacity: 0.5,
+			opacity: 0
+		}).addTo(map);
+		//Launch sites A-H polygon/pop-ups
+		var AH = L.polygon([
+			[35.196043,-106.599709],
+			[35.195113,-106.596533],
+			[35.192869,-106.597477],
+			[35.193956,-106.600524]
+		], {
+			opacity: 0,
+			fillOpacity: 0
+		}).addTo(map);
+		AH.bindPopup("<b>Launch Sites A-H</b><br><a href=''>Click</a> to see which balloons will launch from here");
+		//Launch sites J-P polygon/pop-ups
+		var AH = L.polygon([
+			[35.198113,-106.59877],
+			[35.197193,-106.595605],
+			[35.195255,-106.596463],
+			[35.196184,-106.599671]
+		], {
+			opacity: 0,
+			fillOpacity: 0
+		}).addTo(map);
+		AH.bindPopup("<b>Launch Sites J-P</b><br><a href=''>Click</a> to see which balloons will launch from here");
+		//Launch sites Q-W polygon/pop-ups
+		var AH = L.polygon([
+			[35.198227,-106.598727],
+			[35.197342,-106.595562],
+			[35.199586,-106.594543],
+			[35.199744,-106.597708]
+		], {
+			opacity: 0,
+			fillOpacity: 0
+		}).addTo(map);
+		AH.bindPopup("<b>Launch Sites Q-W</b><br><a href=''>Click</a> to see which balloons will launch from here");
+		//Parking
+		var parking = L.polygon([
+			[35.201147,-106.589479],
+			[35.201602,-106.594403],
+			[35.201839,-106.595358],
+			[35.200585,-106.596217],
+			[35.200147,-106.593835],
+			[35.199902,-106.59318],
+			[35.199691,-106.592429],
+			[35.19984,-106.591775],
+			[35.200024,-106.590949],
+			[35.200068,-106.589747]
+		], {
+			color: 'grey',
+			fillOpacity: 0.8,
+			opacity: 0
+		}).addTo(map);
+		var parking1 = L.polygon([
+			[35.198753,-106.592622],
+			[35.198779,-106.590723],
+			[35.194597,-106.592386],
+			[35.195115,-106.594221],
+			[35.195492,-106.593845]
+		], {
+			color: 'grey',
+			fillOpacity: 0.8,
+			opacity: 0
+		}).addTo(map);
+		var parking2 = L.polygon([
+			[35.193266,-106.594664],
+			[35.193239,-106.592738],
+			[35.192875,-106.59284],
+			[35.192805,-106.593274],
+			[35.192709,-106.593639],
+			[35.192529,-106.59417],
+			[35.192227,-106.594749],
+			[35.192332,-106.594932]
+		], {
+			color: 'grey',
+			fillOpacity: 0.8,
+			opacity: 0
+		}).addTo(map);
+		var parking3 = L.polygon([
+			[35.194467,-106.591949],
+			[35.194502,-106.589578],
+			[35.193388,-106.589621],
+			[35.193318,-106.592416]
+		], {
+			color: 'grey',
+			fillOpacity: 0.8,
+			opacity: 0
+		}).addTo(map);
+		var parking4 = L.polygon([
+			[35.185151,-106.600784],
+			[35.185216,-106.599787],
+			[35.185392,-106.599084],
+			[35.185243,-106.598419],
+			[35.184765,-106.598612],
+			[35.184743,-106.600741]
+		], {
+			color: 'grey',
+			fillOpacity: 0.8,
+			opacity: 0
+		}).addTo(map);
+		var pIcon = L.icon({
+			iconUrl: 'parking-icon.svg',
+			iconSize:     [30, 30], // size of the icon
+			iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
+			popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+		});
+		var parkingMarker = L.marker([35.200664, -106.59288], {icon:pIcon}).addTo(map);
+		var parkingMarker1 = L.marker([35.196902,-106.592392], {icon:pIcon}).addTo(map);
+		var parkingMarker2 = L.marker([35.192906,-106.593977], {icon:pIcon}).addTo(map);
+		var parkingMarker3 = L.marker([35.193971,-106.590882], {icon:pIcon}).addTo(map);
+		var parkingMarker4 = L.marker([35.184988,-106.599722], {icon:pIcon}).addTo(map);
+		parkingMarker.bindPopup("General Parking");
+		parkingMarker1.bindPopup("General Parking");
+		parkingMarker2.bindPopup("General Parking");
+		parkingMarker3.bindPopup("General Parking");
+		parkingMarker4.bindPopup("General Parking");
+		//Handicap parking
+		var hcparking = L.polygon([
+			[35.199447,-106.592464],
+			[35.199552,-106.592024],
+			[35.199692,-106.591697],
+			[35.199758,-106.591354],
+			[35.199683,-106.591016],
+			[35.198991,-106.590817],
+			[35.198951,-106.592389],
+			[35.199034,-106.592663]
+		], {
+			color: 'blue',
+			fillOpacity: 0.5,
+			opacity: 0
+		}).addTo(map);
+		var hcparking1 = L.polygon([
+			[35.191179,-106.596209],
+			[35.19138,-106.595565],
+			[35.19167,-106.595034],
+			[35.191218,-106.594647],
+			[35.190622,-106.595908],
+			[35.19085,-106.596107]
+		], {
+			color: 'blue',
+			fillOpacity: 0.5,
+			opacity: 0
+		}).addTo(map);
+		var hcIcon = L.icon({
+			iconUrl: 'hc-icon.svg',
+			iconSize:     [30, 30], // size of the icon
+			iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
+			popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+		});
+		var hcparkingMarker = L.marker([35.19928,-106.591649], {icon:hcIcon}).addTo(map);
+		var hcparkingMarker1 = L.marker([35.191139,-106.595457], {icon:hcIcon}).addTo(map);
+		hcparkingMarker.bindPopup("Handicap Parking");
+		hcparkingMarker1.bindPopup("Handicap Parking");
+		//RV parking
+		var rvparking = L.polygon([
+			[35.194576,-106.594288],
+			[35.194357,-106.592142],
+			[35.193353,-106.592518],
+			[35.193362,-106.594712]
+		], {
+			color: 'brown',
+			fillOpacity: 0.5,
+			opacity: 0
+		}).addTo(map);
+		var rvparking1 = L.polygon([
+			[35.184523,-106.60451],
+			[35.1844,-106.603598],
+			[35.183313,-106.603909],
+			[35.182927,-106.602203],
+			[35.183707,-106.601892],
+			[35.184365,-106.601892],
+			[35.184312,-106.598834],
+			[35.177243,-106.601468],
+			[35.176962,-106.60267],
+			[35.176962,-106.603571],
+			[35.177418,-106.604408],
+			[35.178278,-106.604987]
+		], {
+			color: 'brown',
+			fillOpacity: 0.5,
+			opacity: 0
+		}).addTo(map);
+		var rvIcon = L.icon({
+			iconUrl: 'rv-icon.svg',
+			iconSize:     [30, 30], // size of the icon
+			iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
+			popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+		});
+		var rvparkingMarker = L.marker([35.193941,-106.59343], {icon:rvIcon}).addTo(map);
+		var rvparkingMarker1 = L.marker([35.180856,-106.602799], {icon:rvIcon}).addTo(map);
+		rvparkingMarker.bindPopup("RV Parking");
+		rvparkingMarker1.bindPopup("RV Parking");
+		//Crew parking
+		var crewparking = L.polygon([
+			[35.193151,-106.601356],
+			[35.192642,-106.601023],
+			[35.192125,-106.600605],
+			[35.191187,-106.601978],
+			[35.191415,-106.602107]
+		], {
+			color: 'red',
+			fillOpacity: 0.5,
+			opacity: 0
+		}).addTo(map);
+		var crewparking1 = L.polygon([
+			[35.200897,-106.597807],
+			[35.200639,-106.597507],
+			[35.199977,-106.597255],
+			[35.199872,-106.597711],
+			[35.199688,-106.598086],
+			[35.199723,-106.59822]
+		], {
+			color: 'red',
+			fillOpacity: 0.5,
+			opacity: 0
+		}).addTo(map);
+		var crewparking2 = L.polygon([
+			[35.204575,-106.596364],
+			[35.204273,-106.594261],
+			[35.202988,-106.595103],
+			[35.203023,-106.595259],
+			[35.203541,-106.595822],
+			[35.203988,-106.596568],
+			[35.204373,-106.596858]
+		], {
+			color: 'red',
+			fillOpacity: 0.5,
+			opacity: 0
+		}).addTo(map);
+		var crewIcon = L.icon({
+			iconUrl: 'crew-icon.svg',
+			iconSize:     [30, 30], // size of the icon
+			iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
+			popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+		});
+		var crewparkingMarker = L.marker([35.192125,-106.601431], {icon:crewIcon}).addTo(map);
+		var crewparkingMarker1 = L.marker([35.200275,-106.597743], {icon:crewIcon}).addTo(map);
+		var crewparkingMarker2 = L.marker([35.204001,-106.595484], {icon:crewIcon}).addTo(map);
+		crewparkingMarker.bindPopup("Crew Parking");
+		crewparkingMarker1.bindPopup("Crew Parking");
+		crewparkingMarker2.bindPopup("Crew Parking");
+		//Stage
+		var stageIcon = L.icon({
+			iconUrl: 'stage-icon.svg',
+			iconSize:     [30, 30], // size of the icon
+			iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
+			popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+		});
+		var stage = L.marker([35.196135,-106.595121], {icon:stageIcon}).addTo(map);
+		stage.bindPopup("Stage");
+		//Park & Ride
+		var busIcon = L.icon({
+			iconUrl: 'parkride-icon.svg',
+			iconSize:     [30, 30], // size of the icon
+			iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
+			popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+		});
+		var parkRide = L.marker([35.194471,-106.595195], {icon:busIcon}).addTo(map);
+		parkRide.bindPopup("Park & Ride Drop Off");
+		//Pilot Briefing Tower
+		var dotIcon = L.icon({
+			iconUrl: 'star-icon.svg',
+			iconSize:     [30, 30], // size of the icon
+			iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
+			popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+		});
+		var pilot = L.marker([35.197259,-106.599357], {icon:dotIcon}).addTo(map);
+		pilot.bindPopup("Pilot Briefing Tower");
+		//Bathrooms
+		var rrIcon = L.icon({
+			iconUrl: 'restroom-icon.svg',
+			iconSize:     [30, 30], // size of the icon
+			iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
+			popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+		});
+		var restroom = L.marker([35.199688,-106.594588], {icon:rrIcon}).addTo(map);
+		var restroom1 = L.marker([35.199946,-106.598094], {icon:rrIcon}).addTo(map);
+		var restroom2 = L.marker([35.198324,-106.598909], {icon:rrIcon}).addTo(map);
+		var restroom3 = L.marker([35.195983,-106.600015], {icon:rrIcon}).addTo(map);
+		var restroom4 = L.marker([35.192598,-106.597086], {icon:rrIcon}).addTo(map);
+		var restroom5 = L.marker([35.193265,-106.595616], {icon:rrIcon}).addTo(map);
+		var restroom6 = L.marker([35.194589,-106.594961], {icon:rrIcon}).addTo(map);
+		var restroom7 = L.marker([35.195807,-106.593985], {icon:rrIcon}).addTo(map);
+		var restroom8 = L.marker([35.196579,-106.593695], {icon:rrIcon}).addTo(map);
+		var restroom9 = L.marker([35.198762,-106.593191], {icon:rrIcon}).addTo(map);
+		//Beer
+		var beerIcon = L.icon({
+			iconUrl: 'beer-icon.svg',
+			iconSize:     [30, 30], // size of the icon
+			iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
+			popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+		});
+		var beer = L.marker([35.196001,-106.594572], {icon:beerIcon}).addTo(map);
+		beer.bindPopup("Cantina");
+		var beer1 = L.marker([35.193738,-106.596935], {icon:beerIcon}).addTo(map);
+		beer1.bindPopup("Cantina");
 </script>
 </body>
 </html>

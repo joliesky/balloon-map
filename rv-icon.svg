@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="180.667px" height="185.333px" viewBox="0 0 180.667 185.333" enable-background="new 0 0 180.667 185.333"
+	 xml:space="preserve">
+<symbol  id="Bubble" viewBox="-11 -11 22 22">
+	<g>
+		<g>
+			<radialGradient id="SVGID_1_" cx="-4.3779" cy="6.1621" r="18.6933" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#F6F6F6"/>
+				<stop  offset="1" style="stop-color:#203234"/>
+			</radialGradient>
+			<path fill="url(#SVGID_1_)" d="M11,0c0-6.075-4.926-11-11-11c-6.075,0-11,4.925-11,11s4.925,11,11,11S11,6.075,11,0z"/>
+			<path opacity="0.5" fill="#666666" enable-background="new    " d="M11,0c0-6.075-4.926-11-11-11c-6.075,0-11,4.925-11,11
+				s4.925,11,11,11S11,6.075,11,0z"/>
+		</g>
+	</g>
+</symbol>
+<use xlink:href="#Bubble"  width="22" height="22" x="-11" y="-11" transform="matrix(8.2197 0 0 -8.2197 90.4175 93.9146)" overflow="visible"/>
+<g>
+	<path fill="#FFFFFF" d="M35.265,124.73V61.874h26.711c6.717,0,11.598,0.565,14.642,1.694c3.044,1.129,5.481,3.137,7.311,6.024
+		c1.829,2.888,2.744,6.189,2.744,9.904c0,4.716-1.387,8.611-4.159,11.684c-2.773,3.073-6.917,5.009-12.434,5.809
+		c2.744,1.602,5.009,3.359,6.796,5.274c1.786,1.915,4.195,5.316,7.225,10.204l7.675,12.263H76.597l-9.176-13.678
+		c-3.258-4.888-5.488-7.968-6.688-9.239c-1.201-1.271-2.473-2.145-3.816-2.615c-1.344-0.472-3.473-0.708-6.389-0.708h-2.573v26.24
+		H35.265z M47.956,88.457h9.39c6.088,0,9.89-0.257,11.405-0.772c1.515-0.515,2.701-1.4,3.559-2.658
+		c0.858-1.258,1.287-2.83,1.287-4.716c0-2.115-0.565-3.823-1.694-5.124c-1.129-1.3-2.723-2.122-4.781-2.465
+		c-1.029-0.143-4.116-0.214-9.261-0.214h-9.904V88.457z"/>
+	<path fill="#FFFFFF" d="M113.084,124.73L90.617,61.874h13.763l15.907,46.521l15.393-46.521h13.463l-22.51,62.856H113.084z"/>
+</g>
+</svg>

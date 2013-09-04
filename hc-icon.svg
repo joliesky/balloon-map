@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="180.667px" height="185.333px" viewBox="0 0 180.667 185.333" enable-background="new 0 0 180.667 185.333"
+	 xml:space="preserve">
+<symbol  id="Bubble" viewBox="-11 -11 22 22">
+	<g>
+		<g>
+			<radialGradient id="SVGID_1_" cx="-4.3779" cy="6.1621" r="18.6933" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#F6F6F6"/>
+				<stop  offset="1" style="stop-color:#203234"/>
+			</radialGradient>
+			<path fill="url(#SVGID_1_)" d="M11,0c0-6.075-4.926-11-11-11c-6.075,0-11,4.925-11,11s4.925,11,11,11S11,6.075,11,0z"/>
+			<path opacity="0.5" fill="#666666" enable-background="new    " d="M11,0c0-6.075-4.926-11-11-11c-6.075,0-11,4.925-11,11
+				s4.925,11,11,11S11,6.075,11,0z"/>
+		</g>
+	</g>
+</symbol>
+<symbol  id="Wheelchair_Accessible" viewBox="-0.695 -0.691 136.392 136.383">
+	<g>
+		<polygon fill="none" points="-0.695,-0.691 135.696,-0.691 135.696,135.691 -0.695,135.691 		"/>
+		<g>
+			<path fill="#231F20" fill-opacity="0" d="M135.696,20.811c0-11.89-9.622-21.502-21.492-21.502H20.815
+				c-11.89,0-21.511,9.612-21.511,21.502v93.389c0,11.852,9.621,21.492,21.511,21.492h93.389c11.87,0,21.492-9.641,21.492-21.492
+				V20.811z"/>
+			<g>
+				<path fill="#FFFFFF" d="M45.192,74.025c-10.156-4.895-16.47-14.663-16.47-26.7c0-16.709,13.566-30.284,30.304-30.284
+					c14.192,0,26.137,9.778,29.418,23.004l4.534-10.617C86.721,16.524,74.417,8.783,59.118,8.783
+					c-21.354,0-38.653,17.299-38.653,38.598c0,16.414,10.212,30.404,24.654,36.026L45.192,74.025z"/>
+				<path fill="#FFFFFF" d="M59.127,57.878l-9.797,0.488v45.87c5.945-4.451,10.249-2.471,10.249-2.471V83.141l24.35,0.045v-9.723
+					L59.57,73.417l0.018-5.834l33.778-1.724l14.368-38.321l9.76,3.678l2.756-7.355l-18.848-7.096L86.334,56.579L59.127,57.878z"/>
+				<path fill="#FFFFFF" d="M67.855,110.725c0-6.221-5.014-11.226-11.207-11.226s-11.217,5.005-11.217,11.226
+					c0,6.175,5.023,11.188,11.217,11.188S67.855,116.899,67.855,110.725z"/>
+			</g>
+		</g>
+	</g>
+</symbol>
+<use xlink:href="#Bubble"  width="22" height="22" x="-11" y="-11" transform="matrix(8.2197 0 0 -8.2197 90.4175 93.9146)" overflow="visible"/>
+<use xlink:href="#Wheelchair_Accessible"  width="136.392" height="136.383" x="-0.695" y="-0.691" transform="matrix(1.0712 0 0 -1.0712 19.3823 159.4263)" overflow="visible"/>
+</svg>

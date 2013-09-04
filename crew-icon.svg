@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="180.667px" height="185.333px" viewBox="0 0 180.667 185.333" enable-background="new 0 0 180.667 185.333"
+	 xml:space="preserve">
+<symbol  id="Bubble" viewBox="-11 -11 22 22">
+	<g>
+		<g>
+			<radialGradient id="SVGID_1_" cx="-4.3779" cy="6.1621" r="18.6933" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#F6F6F6"/>
+				<stop  offset="1" style="stop-color:#203234"/>
+			</radialGradient>
+			<path fill="url(#SVGID_1_)" d="M11,0c0-6.075-4.926-11-11-11c-6.075,0-11,4.925-11,11s4.925,11,11,11S11,6.075,11,0z"/>
+			<path opacity="0.5" fill="#666666" enable-background="new    " d="M11,0c0-6.075-4.926-11-11-11c-6.075,0-11,4.925-11,11
+				s4.925,11,11,11S11,6.075,11,0z"/>
+		</g>
+	</g>
+</symbol>
+<use xlink:href="#Bubble"  width="22" height="22" x="-11" y="-11" transform="matrix(8.2197 0 0 -8.2197 90.4175 93.9146)" overflow="visible"/>
+<g>
+	<path fill="#FFFFFF" d="M105.738,100.438l13.441,4.262c-2.061,7.493-5.488,13.059-10.279,16.695
+		c-4.793,3.638-10.873,5.456-18.242,5.456c-9.117,0-16.61-3.114-22.479-9.343c-5.87-6.229-8.805-14.744-8.805-25.547
+		c0-11.427,2.951-20.302,8.852-26.624s13.659-9.483,23.275-9.483c8.398,0,15.221,2.482,20.465,7.446
+		c3.122,2.935,5.464,7.15,7.025,12.645l-13.722,3.278c-0.813-3.559-2.506-6.369-5.081-8.43c-2.576-2.061-5.707-3.091-9.39-3.091
+		c-5.089,0-9.219,1.826-12.387,5.479c-3.169,3.653-4.753,9.57-4.753,17.75c0,8.68,1.561,14.861,4.684,18.545
+		c3.122,3.685,7.18,5.526,12.176,5.526c3.684,0,6.853-1.171,9.507-3.513C102.678,109.149,104.583,105.465,105.738,100.438z"/>
+</g>
+</svg>
